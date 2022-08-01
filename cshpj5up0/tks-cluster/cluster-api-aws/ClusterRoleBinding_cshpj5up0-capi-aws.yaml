@@ -1,0 +1,13 @@
+# Source: cluster-api-aws/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cshpj5up0-capi-aws
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cshpj5up0-capi-aws
+subjects:
+- kind: ServiceAccount
+  name: cshpj5up0-capi-aws
+  namespace: cshpj5up0
